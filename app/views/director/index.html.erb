@@ -1,3 +1,4 @@
+<h1>List of Directors</h1>
 <table>
   <tr>
     <th>Name</th>
@@ -24,6 +25,12 @@
         Delete
       </a>
     </td>
+    <td>
+    <a href="http://localhost:3000/directors/<%= director.id %>">Show</a>
+  </td>
+  <td>
+    <a href="http://localhost:3000/director/<%= director.id %>/edit_form">Edit</a>
+  </td>
   </tr>
   <% end %>
 

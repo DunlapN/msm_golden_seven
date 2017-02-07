@@ -1,3 +1,4 @@
+<h1>List of Movies</h1>
 <table>
   <tr>
     <th>Title</th>
@@ -28,6 +29,12 @@
         Delete
       </a>
     </td>
+    <td>
+    <a href="http://localhost:3000/movies/<%= movie.id %>">Show</a>
+  </td>
+  <td>
+    <a href="http://localhost:3000/movies/<%= movie.id %>/edit_form">Edit</a>
+  </td>
   </tr>
   <% end %>
 
