@@ -1,0 +1,30 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Bio</th>
+    <th>Date of Birth</th>
+    <th>Image</th>
+  </tr>
+  <% @list_of_actors.each do |actor| %>
+  <tr>
+    <td>
+      <%= actor.name %>
+    </td>
+    <td>
+      <%= actor.bio %>
+    </td>
+    <td>
+      <%= actor.dob %>
+    </td>
+    <td>
+      <%= actor.image_url %>
+    </td>
+    <td>
+      <a href="http://localhost:3000/delete_actors/<%= actor.id %>">
+        Delete
+      </a>
+    </td>
+  </tr>
+  <% end %>
+
+</table>
